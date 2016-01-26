@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BaMinZuChe2016-01-26.iml" filepath="$PROJECT_DIR$/BaMinZuChe2016-01-26.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_HKL/lib_HKL.iml" filepath="$PROJECT_DIR$/lib_HKL/lib_HKL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/八闽租车/八闽租车.iml" filepath="$PROJECT_DIR$/八闽租车/八闽租车.iml" />
+    </modules>
+  </component>
+</project>

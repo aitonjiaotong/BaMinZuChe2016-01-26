@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ShenZhouZuChe2016-1-26</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_enterprise">EnterpriseActivity</string>
+    <string name="title_activity_rent_self">RentSelfActivity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_short_rent_self">ShortRentSelfActivity</string>
+    <string name="title_activity_check_car">CheckCarActivity</string>
+    <string name="title_activity_check_server">CheckServerActivity</string>
+    <string name="title_activity_enterprise_rent_self">EnterpriseRentSelfActivity</string>
+    <string name="title_activity_enterprise_reservation">EnterpriseReservationActivity</string>
+    <string name="title_activity_choose_city">ChooseCityActivity</string>
+</resources>
