@@ -10,6 +10,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/FlycoPageIndicator_Lib" />
             <option value="$PROJECT_DIR$/lib_HKL" />
             <option value="$PROJECT_DIR$/八闽租车" />
           </set>
