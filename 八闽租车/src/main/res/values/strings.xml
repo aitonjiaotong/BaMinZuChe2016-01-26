@@ -16,4 +16,5 @@
     <string name="title_activity_enterprise_rent_self">EnterpriseRentSelfActivity</string>
     <string name="title_activity_enterprise_reservation">EnterpriseReservationActivity</string>
     <string name="title_activity_choose_city">ChooseCityActivity</string>
+    <string name="title_activity_mine">MineActivity</string>
 </resources>
