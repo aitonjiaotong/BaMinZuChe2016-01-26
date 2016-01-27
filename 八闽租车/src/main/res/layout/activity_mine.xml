@@ -16,6 +16,7 @@
         android:textSize="@dimen/ActionBar_Title_Size"/>
 
     <RelativeLayout
+        android:id="@+id/rl_headimg_pk"
         android:layout_below="@+id/tv_action_bar_title"
         android:layout_width="match_parent"
         android:background="@mipmap/myself_top_bg"
@@ -52,7 +53,19 @@
                 android:textColor="@color/white"
                 android:text="136****3698"/>
         </LinearLayout>
-
     </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/rl_headimg_pk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <include layout="@layout/include_mine_money_wallet"></include>
+            <include layout="@layout/include_mine_cards"></include>
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>

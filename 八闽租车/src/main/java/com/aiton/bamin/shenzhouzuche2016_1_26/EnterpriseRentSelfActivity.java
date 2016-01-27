@@ -10,9 +10,11 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import com.aiton.bamin.shenzhouzuche2016_1_26.fragment.ViewPagerFragment;
 
@@ -161,6 +163,22 @@ public class EnterpriseRentSelfActivity extends AppCompatActivity implements Vie
             return Integer.MAX_VALUE;
         }
     }
+
+
+    private long currentTime = 0;
+    public boolean onKeyDown(int keyCode, android.view.KeyEvent event) {
+        if(keyCode== KeyEvent.KEYCODE_BACK){
+            if(System.currentTimeMillis()-currentTime>1000){
+                Toast toast = Toast.makeText(EnterpriseRentSelfActivity.this, "双击退出应用", Toast.LENGTH_SHORT);
+                toast.show();
+                currentTime=System.currentTimeMillis();
+                return false;
+            }else{
+                return super.onKeyDown(keyCode, event);
+            }
+        }
+        return super.onKeyDown(keyCode, event);
+    };
 
 
 }
