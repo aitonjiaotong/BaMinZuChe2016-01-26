@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/E:/MyApplication_OSC/BaMinZuChe2016-01-26/lib_HKL/res/values/strings.xml -->
+    <!-- From: file:/G:/AndroidProject/BaMinZuChe2016-01-26-01/lib_HKL/res/values/strings.xml -->
     <eat-comment/>
     <string name="app_name">lib_yuchen</string>
-    <!-- From: file:/E:/MyApplication_OSC/BaMinZuChe2016-01-26/lib_HKL/res/values/styles.xml -->
+    <!-- From: file:/G:/AndroidProject/BaMinZuChe2016-01-26-01/lib_HKL/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--

@@ -94,6 +94,7 @@
                 android:layout_height="match_parent">
 
                 <RelativeLayout
+                    android:id="@+id/takeCarCity"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
@@ -103,7 +104,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="厦门"
-                        android:id="@+id/textView18"
+                        android:id="@+id/takeCarCityTv"
                         android:layout_centerVertical="true"
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentStart="true"
@@ -293,6 +294,7 @@
                 android:layout_height="match_parent">
 
                 <RelativeLayout
+                    android:id="@+id/returnCarCity"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
@@ -302,7 +304,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="厦门"
-                        android:id="@+id/textView24"
+                        android:id="@+id/returnCarCityTv"
                         android:layout_centerVertical="true"
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentStart="true"
