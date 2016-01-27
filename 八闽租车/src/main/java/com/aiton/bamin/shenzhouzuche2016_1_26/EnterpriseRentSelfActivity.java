@@ -1,6 +1,7 @@
 package com.aiton.bamin.shenzhouzuche2016_1_26;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
@@ -11,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 import com.aiton.bamin.shenzhouzuche2016_1_26.fragment.ViewPagerFragment;
 
@@ -27,6 +29,8 @@ public class EnterpriseRentSelfActivity extends AppCompatActivity implements Vie
     private Runnable mR;
     private boolean isViewPagerTouch = false;
     private ImageView mIv_rental;
+    private RelativeLayout mRl_mine;
+    private RelativeLayout mRl_call_center;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -41,12 +45,17 @@ public class EnterpriseRentSelfActivity extends AppCompatActivity implements Vie
     private void setOnclick()
     {
         mIv_rental.setOnClickListener(this);
+        mRl_mine.setOnClickListener(this);
+        mRl_call_center.setOnClickListener(this);
     }
 
     private void initUI()
     {
         initBanner();
         mIv_rental = (ImageView) findViewById(R.id.iv_rental);
+        mRl_mine = (RelativeLayout) findViewById(R.id.rl_mine);
+        mRl_call_center = (RelativeLayout) findViewById(R.id.rl_call_center);
+
     }
 
     private void initBanner()
@@ -67,6 +76,15 @@ public class EnterpriseRentSelfActivity extends AppCompatActivity implements Vie
             case R.id.iv_rental:
                 intent.setClass(EnterpriseRentSelfActivity.this,EnterpriseReservationActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.rl_mine:
+                intent.setClass(EnterpriseRentSelfActivity.this,MineActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.rl_call_center:
+                //TODO 打开电话权限，直接拨打电话
+                Intent intent_call = new Intent(Intent.ACTION_CALL, Uri.parse("tel:10086"));
+                startActivity(intent_call);
                 break;
         }
     }
