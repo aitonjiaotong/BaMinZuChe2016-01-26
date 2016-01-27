@@ -1,1 +1,1 @@
-include '八闽租车', ':lib_HKL', ':八闽租车'
+include '八闽租车', ':lib_HKL'
