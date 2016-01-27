@@ -13,6 +13,8 @@ public class Constant
         /**--***********返回码**********--*/
         public static final int RESULTCODE_LOCATION_ACTIVITY_SEARCH_LISTVIEW = 0;
         public static final int RESULTCODE_LOCATION_ACTIVITY_CITY_LISTVIEW = 1;
+
+        public static final int RESULTCODE_CHOOSE_CAR_MODEL = 0;
     }
 
     public static final class URL
@@ -27,6 +29,12 @@ public class Constant
 
         public static final String INTENT_KEY_SEARCH_LISTVIEW = "search_listview_key";
         public static final String INTENT_KEY_CITY_LISTVIEW = "city_listview_key";
+
+        public static final String INTENT_KEY_CHOOSE_CAR_MODEL = "choose_car_model_key";
+        public static final String INTENT_KEY_IS_ENTERPRISE= "isEnterprise";
+
+
+
     }
 
 

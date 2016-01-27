@@ -1,9 +1,12 @@
 package com.aiton.bamin.shenzhouzuche2016_1_26.model;
 
+import java.io.Serializable;
+
 /**
  * Created by zjb on 2016/1/26.
  */
-public class CarInfo {
+public class CarInfo implements Serializable
+{
     private int carImgID;
     private String carName;
     private int carPrice;

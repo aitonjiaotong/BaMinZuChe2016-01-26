@@ -43,8 +43,8 @@
                 android:id="@+id/city_of_take_car"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:background="@drawable/btn_white_and_gray_selector"
+                android:gravity="center"
                 android:orientation="horizontal"
                 android:padding="20dp">
 
@@ -77,8 +77,8 @@
                 android:id="@+id/time_of_take_car"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:background="@drawable/btn_white_and_gray_selector"
+                android:gravity="center"
                 android:orientation="horizontal"
                 android:padding="20dp">
 
@@ -132,8 +132,8 @@
                 android:id="@+id/choose_car_models"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:background="@drawable/btn_white_and_gray_selector"
+                android:gravity="center"
                 android:orientation="horizontal"
                 android:padding="20dp">
 
@@ -144,6 +144,7 @@
                     android:text="选择车型"/>
 
                 <TextView
+                    android:id="@+id/tv_choose_car_model"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="6dp"
@@ -165,8 +166,8 @@
                 android:id="@+id/choose_car_count"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:background="@color/white"
+                android:gravity="center"
                 android:orientation="horizontal"
                 android:padding="20dp">
 
@@ -177,11 +178,13 @@
                     android:text="车辆数"/>
 
                 <ImageView
+                    android:id="@+id/minus_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_count_minus_normal"/>
+                    android:src="@mipmap/ic_count_minus_disable"/>
 
                 <TextView
+                    android:id="@+id/tv_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -189,19 +192,22 @@
                     android:text="1"/>
 
                 <ImageView
+                    android:id="@+id/add_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@mipmap/ic_count_add_normal"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
+
     <TextView
+        android:id="@+id/tv_btn_next"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="下一步"
-        android:gravity="center"
-        android:textColor="@color/white"
         android:layout_alignParentBottom="true"
-        android:background="@color/actionbar_color"/>
+        android:background="@color/actionbar_color"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/white"/>
 
 </RelativeLayout>

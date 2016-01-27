@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.aiton.bamin.shenzhouzuche2016_1_26.EnterpriseCheckCarActivity">
+
+    <TextView
+        android:id="@+id/tv_action_bar_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/actionbar_color"
+        android:gravity="center"
+        android:text="选择车型"
+        android:textColor="@color/white"
+        android:textSize="@dimen/ActionBar_Title_Size"/>
+    <ListView
+        android:id="@+id/lv_car_type"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tv_action_bar_title"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</RelativeLayout>
