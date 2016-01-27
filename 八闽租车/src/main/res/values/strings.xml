@@ -21,4 +21,5 @@
     <string name="title_activity_order">OrderActivity</string>
     <string name="title_activity_enterprise_check_car">EnterpriseCheckCarActivity</string>
     <string name="title_activity_enterprise_confirm_order">EnterpriseConfirmOrderActivity</string>
+    <string name="title_activity_pay">PayActivity</string>
 </resources>

@@ -36,7 +36,23 @@ public class MineActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId())
         {
             case R.id.tv_btn_logout:
-
+//                AlertDialog.Builder builder = new AlertDialog.Builder(MineActivity.this);
+//                builder.setTitle("提示")
+//                        .setMessage("是否退出？")
+//                        .setPositiveButton("确定", new DialogInterface.OnClickListener()
+//                        {
+//                            @Override
+//                            public void onClick(DialogInterface dialog, int which)
+//                            {
+//
+//                                Intent intent = new Intent();
+//                                intent.setClass(MineActivity.this, LoginActivity.class);
+//                                startActivity(intent);
+//                            }
+//                        })
+//                        .setNegativeButton("取消", null)
+//                        .create()
+//                        .show();
                 break;
         }
     }

@@ -37,7 +37,7 @@
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login" >
+            android:label="@string/title_activity_login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -85,6 +85,10 @@
         <activity
             android:name=".EnterpriseConfirmOrderActivity"
             android:label="@string/title_activity_enterprise_confirm_order" >
+        </activity>
+        <activity
+            android:name=".model.PayActivity"
+            android:label="@string/title_activity_pay" >
         </activity>
     </application>
 
