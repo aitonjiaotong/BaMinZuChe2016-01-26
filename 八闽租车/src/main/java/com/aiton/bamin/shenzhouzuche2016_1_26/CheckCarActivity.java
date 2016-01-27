@@ -1,9 +1,11 @@
 package com.aiton.bamin.shenzhouzuche2016_1_26;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -25,6 +27,20 @@ public class CheckCarActivity extends AppCompatActivity {
         setContentView(R.layout.activity_check_car);
         initUI();
         initData();
+        setListener();
+    }
+
+    private void setListener() {
+        mListView.setOnItemClickListener(new MyItemClickListener());
+    }
+    class MyItemClickListener implements AdapterView.OnItemClickListener {
+
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            Intent intent=new Intent();
+            intent.setClass(CheckCarActivity.this,CheckServerActivity.class);
+            startActivity(intent);
+        }
     }
 
     private void initData() {

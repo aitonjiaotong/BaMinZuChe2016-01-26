@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.aiton.bamin.shenzhouzuche2016_1_26" >
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -52,7 +53,16 @@
         <activity
             android:name=".ChooseCityActivity"
             android:label="@string/title_activity_choose_city"
-            android:windowSoftInputMode="adjustNothing">
+            android:windowSoftInputMode="adjustNothing" >
+        </activity>
+        <activity
+            android:name=".CheckServerActivity"
+            android:label="@string/title_activity_check_server"
+            android:windowSoftInputMode="adjustNothing" >
+        </activity>
+        <activity
+            android:name=".MakeSureOrder"
+            android:label="@string/title_activity_make_sure_order" >
         </activity>
     </application>
 

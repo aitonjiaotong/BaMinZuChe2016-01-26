@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="com.aiton.bamin.shenzhouzuche2016_1_26.MakeSureOrder">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBar_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/actionbar_color">
+
+        <TextView
+            android:id="@+id/textView62"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:text="确认订单"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ActionBar_Title_Size"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/relativeLayout8"
+        android:layout_above="@+id/linearLayout5">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/makesureorder_view01"></include>
+            <include layout="@layout/makesureorder_view02"></include>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:background="@color/blue_base"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout5">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单总额"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:id="@+id/textView88"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"/>
+
+            <TextView
+                android:textColor="#ffba1a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥"
+                android:id="@+id/textView90"
+                android:layout_alignBottom="@+id/textView88"
+                android:layout_toRightOf="@+id/textView88"
+                android:layout_toEndOf="@+id/textView88"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="432"
+                android:textColor="#ffba1a"
+                android:textSize="22sp"
+                android:id="@+id/textView91"
+                android:layout_alignBottom="@+id/textView90"
+                android:layout_toRightOf="@+id/textView90"
+                android:layout_toEndOf="@+id/textView90"/>
+        </RelativeLayout>
+
+        <Button
+            android:background="#ffba1a"
+            android:textColor="@color/white"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="提交订单"
+            android:id="@+id/button4"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
