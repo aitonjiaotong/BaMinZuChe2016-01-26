@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/E:/MyApplication_OSC/BaMinZuChe2016-01-26/lib_HKL/build/intermediates/bundles/debug/res/values/values.xml -->
+    <!-- From: file:/G:/AndroidProject/BaMinZuChe2016-01-26-01/lib_HKL/build/intermediates/bundles/debug/res/values/values.xml -->
     <eat-comment/>
     <string name="app_name">lib_yuchen</string>
     <style name="AppBaseTheme" parent="android:Theme.Light">

@@ -1,6 +1,7 @@
 package com.aiton.bamin.shenzhouzuche2016_1_26;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
@@ -39,7 +40,8 @@ public class RentSelfActivity extends AppCompatActivity implements View.OnClickL
     private void setListener() {
         mViewPager.addOnPageChangeListener(new MyViewPagerListener());
         findViewById(R.id.main_short).setOnClickListener(this);
-
+        findViewById(R.id.kefu).setOnClickListener(this);
+        findViewById(R.id.mine).setOnClickListener(this);
     }
 
     private void initUI() {
@@ -54,7 +56,15 @@ public class RentSelfActivity extends AppCompatActivity implements View.OnClickL
         Intent intent= new Intent();
         switch (v.getId()){
             case R.id.main_short:
-                intent.setClass(RentSelfActivity.this,ShortRentSelfActivity.class);
+                intent.setClass(RentSelfActivity.this, ShortRentSelfActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.kefu:
+                Intent intent_call = new Intent(Intent.ACTION_CALL, Uri.parse("tel:10086"));
+                startActivity(intent_call);
+                break;
+            case R.id.mine:
+                intent.setClass(RentSelfActivity.this,MineActivity.class);
                 startActivity(intent);
                 break;
         }
