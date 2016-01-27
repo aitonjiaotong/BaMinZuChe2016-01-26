@@ -564,7 +564,7 @@
 
     <RelativeLayout
         android:id="@+id/checkCar"
-        android:background="@color/blue_base"
+        android:background="@color/blue_light"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"

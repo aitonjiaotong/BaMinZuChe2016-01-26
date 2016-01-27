@@ -18,4 +18,5 @@
     <string name="title_activity_choose_city">ChooseCityActivity</string>
     <string name="title_activity_make_sure_order">MakeSureOrder</string>
     <string name="title_activity_mine">MineActivity</string>
+    <string name="title_activity_order">OrderActivity</string>
 </resources>
